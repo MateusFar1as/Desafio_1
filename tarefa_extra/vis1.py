@@ -5,7 +5,9 @@ conn = mysql.connector.connect(
     host="localhost",
     user="user",
     password="password",
-    database="adventure"
+    database="adventure",
+    charset="utf8mb4",
+    collation="utf8mb4_unicode_ci",
 )
 
 cursor = conn.cursor()
